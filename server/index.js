@@ -27,6 +27,6 @@ app.use(express.static(join(__dirname, '../client/dist')))
 console.log(__dirname,'./client/dist')
 
 //server
-app.listen(3000);
-console.log(`Server is running on port ${3000}`);
+app.listen(process.env.PORT || 3000);
+console.log(`Server is running on port ${process.env.PORT}`);
 dbConnect()
