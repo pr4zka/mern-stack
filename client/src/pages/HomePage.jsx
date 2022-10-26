@@ -27,7 +27,7 @@ export function HomePage() {
                 <h1 className='text-2xl text-gray-300 font-bold'>Post: {posts.length}</h1>
                 <Link to={'/new'} className="text-white text-2xl px-3 py-2 bg-indigo-500 hover:bg-indigo-600">Add Post</Link>
             </header>
-            {renderMain}
+            {renderMain()}
         </div>
     )
 }
