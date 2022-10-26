@@ -24,7 +24,10 @@ app.use(fileupload({
 //routes
 app.use(postRoutes)
 app.use(express.static(join(__dirname, '../client/dist')))
-console.log(__dirname,'./client/dist')
+
+app.get('*', (req, res) => {
+    res.sendFile(join(__dirname, '../client/dist/index.html'))
+})
 
 //server
 app.listen(process.env.PORT || 3000);

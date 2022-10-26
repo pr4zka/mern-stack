@@ -10,7 +10,7 @@
   "scripts": {
     "dev": "nodemon server",
     "debug": "nodemon --inspect server --watch server",
-    "build": "npm install --prefix client && npm run build --prefix client",
+    "build": "npm install --prefix client && npm run build --prefix client && rm -rf client/node_modules",
     "start": "node server"
   },
   "keywords": [],
