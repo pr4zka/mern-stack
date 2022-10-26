@@ -4,6 +4,9 @@
   "description": "",
   "main": "index.js",
   "type": "module",
+  "engines": {
+    "node": "16.15.1"
+  },
   "scripts": {
     "dev": "nodemon server",
     "debug": "nodemon --inspect server --watch server",
